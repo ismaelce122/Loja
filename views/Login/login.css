@@ -10,6 +10,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
+  overflow: hidden;
 }
 .navigation {
   display: flex;
@@ -19,6 +20,7 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  width: 100%;
 }
 .top-nav {
   background: var(--secondary-700, #1b6392);
@@ -603,6 +605,7 @@
   position: absolute;
   left: 10px;
   top: calc(50% - 10px);
+  width: 100%;
 }
 .regular-house {
   flex-shrink: 0;
@@ -818,6 +821,9 @@
   left: 7.55%;
   bottom: 37.3%;
   top: 53.17%;
+  border: 0px;
+  cursor: pointer;
+  color: white;
 }
 .label2 {
   color: var(--gray-00, #ffffff);
@@ -1512,4 +1518,7 @@
   background-size: cover;
   width: 15px;
   height: 15px;
+}
+a {
+  text-decoration: none;
 }
