@@ -1497,6 +1497,19 @@
     width: 100%;
     justify-content: space-between;
 }
-.olho {
+.olho_fechado {
     cursor: pointer;
+    background-image: url(visivel.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+}
+.olho_aberto {
+  cursor: pointer;
+  background-image: url(olho.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
 }

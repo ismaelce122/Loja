@@ -108,19 +108,19 @@
             </div>
         </div>
         <div class="frame-395">
-            <div class="login">
+            <form class="login">
                 <div class="bg"></div>
                 <div class="from">
                     <div class="order-id">
                         <label class="email-address">Email Address</label>
-                        <input class="input-field" type="email">
+                        <input class="input-field" type="email" required>
                     </div>
                     <div class="order-id">
                         <div class="box_olho">
                             <label class="password">Password</label>
-                            <img class="olho" src="visivel.png" width="15" height="15">
+                            <span id="olho" class="olho_aberto" onclick="mudarIcone()"></span>
                         </div>
-                        <input class="input-field" type="password">
+                        <input id="input_senha" class="input-field" type="password" required>
                     </div>
                 </div>
                 <div class="button2">
@@ -152,7 +152,7 @@
                         <div class="sign-in2">Sign Up</div>
                     </div>
                 </div>
-            </div>
+            </form>
         </div>
         <div class="footer">
             <div class="footer2">
@@ -309,5 +309,6 @@
             </div>
         </div>
     </div>
+    <script src="login.js"></script>
 </body>
 </html>
