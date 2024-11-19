@@ -381,15 +381,12 @@
 }
 .bottom-nav {
   background: var(--gray-00, #ffffff);
-  padding: 16px 300px 16px 10px;
+  padding: 16px 0px 16px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
   flex-shrink: 0;
-  width: 100%;
   position: relative;
-  box-shadow: inset 0px -1px 0px 0px rgba(228, 231, 233, 1);
 }
 .left-side {
   display: flex;
@@ -397,19 +394,19 @@
   gap: 24px;
   align-items: center;
   justify-content: center;
+  width: 100%;
   flex-shrink: 0;
   position: relative;
 }
 .category {
   flex-shrink: 0;
   width: 154px;
-  height: 48px;
+  height: 60px;
   position: relative;
 }
 .button {
-  background: var(--gray-50, #f2f4f5);
   border-radius: 2px;
-  padding: 14px 24px 14px 24px;
+  padding: 0px 10px 0px 10px;
   display: flex;
   flex-direction: row;
   gap: 8px;
@@ -418,6 +415,7 @@
   position: absolute;
   left: 0px;
   top: 0px;
+  height: 60px;
 }
 .label {
   color: var(--gray-900, #191c1f);
@@ -447,6 +445,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  height: 60px;
+  padding: 0px 10px 0px 10px;
 }
 .regular-map-pin-line {
   flex-shrink: 0;
@@ -476,6 +476,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  height: 60px;
+  padding: 0px 10px 0px 10px;
 }
 .duotone-arrows-counter-clockwise {
   flex-shrink: 0;
@@ -505,6 +507,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  height: 60px;
+  padding: 0px 10px 0px 10px;
 }
 .regular-headphones {
   flex-shrink: 0;
@@ -534,6 +538,8 @@
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
+  height: 60px;
+  padding: 0px 10px 0px 10px;
 }
 .regular-info {
   flex-shrink: 0;
@@ -560,7 +566,7 @@
   flex-direction: row;
   gap: 8px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-shrink: 0;
   position: relative;
 }
@@ -601,7 +607,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 10px;
+  left: 100px;
   top: calc(50% - 10px);
 }
 .regular-house {
@@ -656,7 +662,7 @@
   padding: 72px 300px 72px 10px;
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 20px;
   align-items: flex-start;
   justify-content: flex-start;
   width: 100%;
@@ -1232,6 +1238,10 @@
 }
 .regular-x-circle {
   flex-shrink: 0;
+  background-image: url(image/excluir.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
   width: 24px;
   height: 24px;
   position: relative;
@@ -1244,6 +1254,7 @@
   height: 72px;
   position: relative;
   object-fit: cover;
+  overflow: visible;
 }
 ._4-k-uhd-led-smart-tv-with-chromecast-built-in {
   color: var(--gray-900, #191c1f);
@@ -1289,7 +1300,7 @@
   line-height: var(--body-small-400-line-height, 20px);
   font-weight: var(--body-small-400-font-weight, 400);
   position: absolute;
-  left: 31px;
+  left: 40px;
   top: 0px;
 }
 .quantity2 {
@@ -1360,6 +1371,10 @@
 }
 .regular-x-circle2 {
   flex-shrink: 0;
+  background-image: url(image/excluir.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
   width: 24px;
   height: 24px;
   position: relative;
@@ -1412,6 +1427,8 @@
   line-height: var(--body-medium-400-line-height, 24px);
   font-weight: var(--body-medium-400-font-weight, 400);
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 .duotone-plus2 {
   flex-shrink: 0;
@@ -1467,6 +1484,8 @@
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  cursor: pointer;
+  background-color: transparent;
 }
 .regular-arrow-left {
   flex-shrink: 0;
@@ -1736,6 +1755,8 @@
   flex-shrink: 0;
   width: 376px;
   position: relative;
+  cursor: pointer;
+  border: 0px;
 }
 .label3 {
   color: var(--gray-00, #ffffff);
@@ -1846,6 +1867,8 @@
   justify-content: center;
   flex-shrink: 0;
   position: relative;
+  cursor: pointer;
+  border: 0px;
 }
 .label4 {
   color: var(--gray-00, #ffffff);
@@ -1863,4 +1886,73 @@
 }
 a {
     text-decoration: none;
+}
+.categorias {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.cupom {
+  border: 0px;
+  outline: none;
+}
+.email {
+  border: 0px;
+  outline: none;
+}
+.tag2:hover {
+  background: var(--gray-800, #303639);
+}
+.todas_as_categorias {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  height: 170px;
+  top: 60px;
+  left: 0px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.category:hover .todas_as_categorias {
+  display: flex;
+  flex-direction: column;
+}
+.todas_as_categorias a {
+  padding: 10px 10px 10px 10px;
+  color: var(--gray-600, #5f6c72);
+}
+.todas_as_categorias a:hover {
+  background-color: #ddd;
+}
+.regular-x-circle2:hover {
+  background-image: url(image/excluir_vermelho.png);
+}
+.regular-x-circle:hover {
+  background-image: url(image/excluir_vermelho.png);
+}
+.diminuir {
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+}
+.somar {
+  border: 0px;
+  cursor: pointer;
+  background-color: transparent;
+}
+.compare:hover {
+  background: var(--gray-50, #f2f4f5);
+}
+.track-order:hover {
+  background: var(--gray-50, #f2f4f5);
+}
+.customer-support:hover {
+  background: var(--gray-50, #f2f4f5);
+}
+.need-help:hover {
+  background: var(--gray-50, #f2f4f5);
+}
+.button:hover {
+  background: var(--gray-50, #f2f4f5);
 }
