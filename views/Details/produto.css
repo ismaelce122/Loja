@@ -272,8 +272,8 @@
   font-weight: var(--body-small-400-font-weight, 400);
   position: relative;
   width: 578px;
-  border: 0px;
   outline: none;
+  border:0px;
 }
 .regular-magnifying-glass {
   flex-shrink: 0;
@@ -1315,9 +1315,6 @@
   font-weight: var(--heading-06-font-weight, 700);
   text-transform: uppercase;
   position: relative;
-  cursor: pointer;
-  border: 0px;
-  background-color: transparent;
 }
 .shopping-cart-simple2 {
   flex-shrink: 0;
@@ -1350,10 +1347,6 @@
   font-weight: var(--heading-06-font-weight, 700);
   text-transform: uppercase;
   position: relative;
-  background-color: transparent;
-  cursor: pointer;
-  padding: 0px;
-  border: 0px;
 }
 .content {
   padding: 0px 0px 8px 0px;
@@ -1500,8 +1493,8 @@
 }
 .payment-method {
   flex-shrink: 0;
-  width: 312px;
-  height: 18px;
+  width: 500px;
+  height: 68px;
   position: relative;
   object-fit: cover;
 }
@@ -2584,7 +2577,4 @@
   font-weight: var(--body-small-400-font-weight, 400);
   position: relative;
   width: 1320px;
-}
-.icon_pesquisa {
-  cursor: pointer;
 }
