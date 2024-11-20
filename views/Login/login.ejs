@@ -29,8 +29,10 @@
             </div>
             <div class="middle-nav">
                 <div class="logo">
-                    <img class="icon" src="image/logo_header.png" />
-                    <div class="clicon">CLICON</div>
+                    <a class="logo" href="#">
+                        <img class="icon" src="image/logo_header.png" />
+                        <div class="clicon">CLICON</div>
+                    </a>
                 </div>
                 <div class="frame-18">
                     <input class="search-for-anything" type="text" placeholder="Search for anything...">
@@ -40,43 +42,64 @@
                 </div>
                 <div class="icons">
                     <div class="shopping-cart-simple">
-                        <img src="image/carrinho.png" />
-                        <div class="frame-182">
-                            <div class="_2">2</div>
-                        </div>
+                        <a href="#">
+                            <img src="image/carrinho.png" />
+                            <div class="frame-182">
+                                <div class="_2">2</div>
+                            </div>
+                        </a>
                     </div>
-                    <img class="heart" src="image/favoritos.png" />
-                    <img class="regular-user" src="image/usuario.png" />
+                    <a href="#"><img class="heart" src="image/favoritos.png" /></a>
+                    <a href="#"><img class="regular-user" src="image/usuario.png" /></a>
                 </div>
             </div>
             <div class="bottom-nav">
                 <div class="left-side">
                     <div class="category">
-                        <div class="button">
-                            <a href="#" class="label">Todas as categorias</a>
-                            <img class="regular-caret-down3" src="image/menu_categorias.png" />
-                        </div>
+                        <a class="categorias" href="#">
+                            <div class="button">
+                                <div class="label">Todas as categorias</div>
+                                <img class="regular-caret-down3" src="image/menu_categorias.png" />
+                            </div>
+                        </a>
+                        <div class="todas_as_categorias">
+                            <a href="#">Smartphones</a>
+                            <a href="#">Informática</a>
+                            <a href="#">Games</a>
+                            <a href="#">Áudio</a>
+                            <a href="#">Móveis</a>
+                        </div>    
                     </div>
                     <div class="track-order">
-                        <img class="regular-map-pin-line" src="image/rastrear_pedido.png" />
-                        <a href="#" class="track-order2">Rastrear pedido</a>
+                        <a class="track-order" href="#">
+                            <img class="regular-map-pin-line" src="image/rastrear_pedido.png" />
+                            <div class="track-order2">Rastrear pedido</div>
+                        </a>
                     </div>
                     <div class="compare">
-                        <img class="duotone-arrows-counter-clockwise" src="image/comparar.png" />
-                        <a href="#" class="compare2">Comparar</a>
+                        <a class="compare" href="#">
+                            <img class="duotone-arrows-counter-clockwise" src="image/comparar.png" />
+                            <div class="compare2">Comparar</div>
+                        </a>
                     </div>
                     <div class="customer-support">
-                        <img class="regular-headphones" src="image/suporte.png" />
-                        <a href="#" class="customer-support2">Suporte ao cliente</a>
+                        <a class="customer-support" href="#">
+                            <img class="regular-headphones" src="image/suporte.png" />
+                            <div class="customer-support2">Suporte ao cliente</div>
+                        </a>
                     </div>
                     <div class="need-help">
-                        <img class="regular-info" src="image/ajuda.png" />
-                        <a href="#" class="need-help2">Ajuda</a>
+                        <a class="need-help" href="#">
+                            <img class="regular-info" src="image/ajuda.png" />
+                            <div class="need-help2">Ajuda</div>
+                        </a>
                     </div>
                 </div>
                 <div class="call-now">
-                    <img class="regular-phone-call" src="image/telefone.png" />
-                    <div class="_1-202-555-0104">+1-202-555-0104</div>
+                    <a class="call-now" href="#">
+                        <img class="regular-phone-call" src="image/telefone.png" />
+                        <div class="_1-202-555-0104">+1-202-555-0104</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -101,9 +124,14 @@
                     <div class="order-id">
                         <div class="box_olho">
                             <label class="password">Senha</label>
+                            <a href="#">
+                                <div class="forget-password">Esqueçeu sua senha</div>
+                            </a>
+                        </div>
+                        <div class="input-field">
+                            <input id="input_senha" type="password" required>
                             <span id="olho" class="olho_aberto" onclick="mudarIcone()"></span>
                         </div>
-                        <input id="input_senha" class="input-field" type="password" required>
                     </div>
                 </div>
                 <div>
@@ -118,20 +146,20 @@
                     </div>
                     <div class="login-register-with">
                         <a href="#" class="login-with-google">Faça login com o Google</a>
-                        <img class="google" src="google0.png" />
+                        <img class="google" src="image/google.png" />
                     </div>
                     <div class="login-register-with">
                         <a href="#" class="login-with-apple">Faça login com a Apple</a>
-                        <img class="apple" src="apple0.svg" />
+                        <img class="apple" src="image/Apple_black.png" />
                     </div>
                 </div>
                 <div class="line-29"></div>
                 <div class="tab">
-                    <div class="tab2">
-                        <a href="#" class="sign-in">Entrar</a>
+                    <div id="div_entrar" class="tab2">
+                        <button type="button" id="btn_entrar" class="sign-in" onclick="Entrar()">Entrar</button>
                     </div>
-                    <div class="tab3">
-                        <a href="#" class="sign-in2">Inscrever-se</a>
+                    <div id="div_inscrever" class="tab3">
+                        <button type="button" id="btn_inscrever" class="sign-in2" onclick="Inscrever()">Inscrever-se</button>
                     </div>
                 </div>
             </form>
@@ -140,8 +168,10 @@
             <div class="footer2">
                 <div class="clicon-e-commerce">
                     <div class="logo">
-                        <img class="icon2" src="image/logo_footer.png" />
-                        <div class="clicon">CLICON</div>
+                         <a class="logo" href="#">
+                            <img class="icon2" src="image/logo_footer.png" />
+                            <div class="clicon">CLICON</div>
+                        </a>
                     </div>
                     <div class="contact-info">
                         <div class="phone-number">
@@ -155,7 +185,7 @@
                     </div>
                 </div>
                 <div class="top-category">
-                    <div class="top-category2">Top Categoria</div>
+                    <div class="top-category2">Top Categorias</div>
                     <div class="item">
                         <div class="footer-links">
                             <a href="#" class="electronics">Computer &amp; Laptop</a>
@@ -177,8 +207,10 @@
                             <a href="#" class="electronics">TV &amp; Homes</a>
                         </div>
                         <div class="button3">
-                            <a href="#" class="browse-all-product">Navegue por produtos</a>
-                            <img class="regular-arrow-right2" src="image/navegar.png" />
+                            <a href="#" class="button3">
+                                <div class="browse-all-product">Navegue por produtos</div>
+                                <img class="regular-arrow-right2" src="image/navegar.png" />
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -211,24 +243,28 @@
                 <div class="quick-links3">
                     <div class="download-a-pp">Download App</div>
                     <div class="links">
-                        <div class="mobile-app">
-                            <div class="icon-google-play-1">
-                                <img class="group" src="image/playstore.png" />
+                        <a href="#">
+                            <div class="mobile-app">
+                                <div class="icon-google-play-1">
+                                    <img class="group" src="image/playstore.png" />
+                                </div>
+                                <div class="info">
+                                    <div class="get-it-now">Baixe agora</div>
+                                    <div class="google-play">Google Play</div>
+                                </div>
                             </div>
-                            <div class="info">
-                                <div class="get-it-now">Baixe agora</div>
-                                <a href="#" class="google-play">Google Play</a>
+                        </a>
+                        <a href="#">
+                            <div class="mobile-app">
+                                <div class="apple-negative-1">
+                                    <img class="group2" src="image/apple.png" width="30" height="30" />
+                                </div>
+                                <div class="info">
+                                    <div class="get-it-now">Baixe agora</div>
+                                    <div class="app-store">App Store</div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="mobile-app">
-                            <div class="apple-negative-1">
-                                <img class="group2" src="image/apple.png" width="30" height="30"/>
-                            </div>
-                            <div class="info">
-                                <div class="get-it-now">Baixe agora</div>
-                                <a href="#" class="app-store">App Store</a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="popular-tag">
