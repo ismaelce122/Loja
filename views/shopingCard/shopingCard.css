@@ -388,11 +388,12 @@
   align-items: center;
   flex-shrink: 0;
   position: relative;
+  gap: 88px;
 }
 .left-side {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 15px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -609,7 +610,7 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  left: 100px;
+  left: 140px;
   top: calc(50% - 10px);
 }
 .regular-house {
@@ -1909,12 +1910,13 @@ a {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  height: 215px;
+  min-width: 153px;
+  height: 205px;
   top: 60px;
   left: 0px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  font-size: 18px;
 }
 .category:hover .todas_as_categorias {
   display: flex;
