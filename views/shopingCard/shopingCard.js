@@ -13,12 +13,14 @@ const diminuir1 = () => {
     } else if(quantidade1 < 10) {
         zero = '0'
     }
+    produto1.innerHTML = zero + quantidade1
 }
 const somar1 = () => {
     produto1.innerHTML = zero + (quantidade1++)
     if(quantidade1 >= 10) {
         zero = ''
     }
+    produto1.innerHTML = zero + quantidade1
 }
 
 const diminuir2 = () => {
@@ -28,11 +30,12 @@ const diminuir2 = () => {
     } else if(quantidade2 < 10) {
         zero = '0'
     }
+    produto2.innerHTML = zero + quantidade2
 }
 const somar2 = () => {
     produto2.innerHTML = zero + (quantidade2++)
     if(quantidade2 >= 10) {
         zero = ''
     }
+    produto2.innerHTML = zero + quantidade2
 }
-
